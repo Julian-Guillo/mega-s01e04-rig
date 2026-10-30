@@ -30,6 +30,17 @@ Read first: `docs/vision.md`, `docs/styleguide.md`. Decisions: `docs/adr/`.
 5. An issue is closed only when its "Done when" holds. If it can't hold yet, leave it open and
    say what it waits on.
 
+## Approved issue shape
+
+Julian approved these fields for the morning-digest plan on 2026-10-30:
+
+- Open the body with `Source: plan.md § <n>`; keep that original source reference after the plan is archived.
+- Include `Scope`, `Done when`, and `Blocked by`, using real issue numbers for dependencies.
+- Apply the `plan:morning-digest` label to every issue for this plan.
+- A review issue stays open until the reviewer confirms seeing the preview. Sending the link is not review completion; cleanup waits for that confirmation.
+
+Future plans still require human review of the split and any changes to their common issue fields.
+
 ## Skills
 
 Shared skills live in `.agents/skills/`, one folder each, `SKILL.md` inside. That folder is the
