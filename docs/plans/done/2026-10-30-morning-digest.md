@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-30
 ---
 
 # Morning digest
@@ -77,3 +78,17 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | URL | Blocked by | Worker | Closed |
+|---|-------|-----|-----------|--------|--------|
+| 1 | Read and aggregate a night's run log | [#1](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/1) | — | codex · gpt-6-astra · high | 2026-10-30 |
+| 2 | Render the digest page | [#2](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/2) | #1 types; #1 reader for final verification | codex · gpt-6-luna · high | 2026-10-30 |
+| 3 | Serve the digest JSON | [#3](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/3) | #1 types; #1–#2 final verification | codex · gpt-6-luna · high | 2026-10-30 |
+| 4 | Link nights from the board | [#4](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/4) | #1 types; #1–#2 final verification | coordinator · default session · effort not exposed | 2026-10-30 |
+| 5 | Test digest routes | [#5](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/5) | #1 types; #1–#3 routes for final verification | codex · gpt-6-luna · high | 2026-10-30 |
+| 6 | Publish preview and request review | [#6](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/6) | #1–#5; separate publication approval | codex · gpt-6-luna · high | 2026-10-30 |
+| 7 | Remove marker and archive plan | [#7](https://github.com/Julian-Guillo/mega-s01e04-rig/issues/7) | #6 review and replacement approval | codex · gpt-6-luna · high | 2026-10-30 |
+
+The course confirmed the reviewer had seen the preview before issue #7 began. The same public URL was replaced with the page rendered while `LANE_MARKER` was unset; the live page now reads “no marker set”.
